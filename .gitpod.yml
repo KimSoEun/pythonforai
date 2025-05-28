@@ -1,0 +1,7 @@
+tasks:
+  - init: pip install -r requirements.txt
+    command: streamlit run app.py --server.headless true --server.port=8501
+
+ports:
+  - port: 8501
+    onOpen: open-preview
